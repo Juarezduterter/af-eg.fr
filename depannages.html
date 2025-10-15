@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dépannages urgents en Alsace – AFEG</title>
+  <meta name="description" content="Besoin d’un dépannage rapide ? AFEG intervient en Alsace pour tous vos travaux de réparation et de bricolage. Notre équipe expérimentée se déplace 24 h/24 et 7 j/7 pour répondre à vos urgences." />
+  <meta name="keywords" content="dépannage urgent, réparations, serrurier, Alsace, Grand‑Est" />
+  <link rel="canonical" href="https://af-eg.fr/depannages-urgents/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Dépannages urgents en Alsace – AFEG" />
+  <meta property="og:description" content="AFEG est votre partenaire pour des dépannages rapides et fiables en Alsace. Disponibles 24 h/24, nous résolvons vos urgences en serrurerie, bricolage, peinture et carrelage." />
+  <meta property="og:image" content="images/img4.jpg" />
+  <meta property="og:site_name" content="AFEG" />
+  <!-- Fonts and Tailwind CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#000000',
+            secondary: '#fcb900',
+            light: '#f9f9f9',
+            dark: '#141414'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>body { font-family: 'Poppins', sans-serif; }</style>
+  <!-- Structured data for FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quel type de dépannages réalisez‑vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous intervenons pour toutes sortes de dépannages : serrurerie, métallerie, bricolage, peinture, carrelage et petits travaux divers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Intervenez‑vous en dehors des heures de bureau ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Nos équipes sont disponibles 24 h/24 et 7 j/7 afin de répondre aux urgences, même la nuit, le week‑end et les jours fériés."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le coût d’un dépannage ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chaque situation est unique. Nous réalisons un devis gratuit et transparent avant chaque intervention pour vous informer du tarif exact."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-light text-primary">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
+          <span class="font-semibold text-lg">AFEG</span>
+        </a>
+        <ul class="hidden md:flex space-x-6 ml-8">
+          <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+          <li><a href="depannages.html" class="text-secondary">Dépannages</a></li>
+          <li><a href="creations.html" class="hover:text-secondary">Créations métalliques</a></li>
+          <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <span class="font-semibold">+33 7 69 68 59 73</span>
+        <a href="#contact" class="bg-secondary text-primary font-semibold px-4 py-2 rounded-md hover:bg-primary hover:text-white transition">Contactez‑nous</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menuToggle" class="focus:outline-none text-primary">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="flex flex-col space-y-2 px-4 py-2">
+        <li><a href="serrurerie.html" class="block py-2 hover:text-secondary">Serrurerie</a></li>
+        <li><a href="depannages.html" class="block py-2 text-secondary">Dépannages</a></li>
+        <li><a href="creations.html" class="block py-2 hover:text-secondary">Créations métalliques</a></li>
+        <li><a href="maintenance.html" class="block py-2 hover:text-secondary">Maintenance</a></li>
+        <li><a href="#contact" class="block py-2 bg-secondary text-primary rounded-md text-center">Contactez‑nous</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-72 md:h-96 bg-cover bg-center flex items-center justify-center" style="background-image: url('images/img4.jpg');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Dépannages urgents en Alsace</h1>
+      <p class="text-base md:text-lg max-w-2xl mx-auto">Votre solution rapide et fiable.</p>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Parce que les urgences n’attendent pas</h2>
+      <p class="mb-6">AFEG intervient pour tous vos travaux de dépannages et réparations en tout genre. Grâce à notre expertise en serrurerie, métallerie, bricolage, peinture et carrelage, nous sommes votre partenaire de confiance pour résoudre rapidement tous les problèmes que vous pouvez rencontrer.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-3">Pourquoi nous faire confiance ?</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Disponible 24/7</strong> — Nous savons que les problèmes arrivent à tout moment. C’est pourquoi notre équipe est disponible pour résoudre vos urgences.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Solutions sur‑mesure</strong> : Notre savoir‑faire nous permet d’adapter nos interventions à vos besoins et à votre budget.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Transparence des tarifs</strong> : Nos devis sont gratuits et nos tarifs détaillés pour éviter toute surprise.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Satisfaction client</strong> : Nous mettons un point d’honneur à vous offrir un service personnalisé et une expérience client d’exception.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <img src="images/img4.jpg" alt="Dépannage urgent" class="rounded-lg shadow-lg h-64 w-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">FAQ Dépannages</h2>
+      <div class="space-y-6">
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">Quel type de dépannages réalisez‑vous ?</summary>
+          <p class="mt-2">Nous prenons en charge la serrurerie, la métallerie, la peinture, le carrelage et les petits travaux de bricolage nécessitant une intervention rapide.</p>
+        </details>
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">Intervenez‑vous en dehors des heures de bureau ?</summary>
+          <p class="mt-2">Oui. Notre équipe est disponible 24 h/24 et 7 j/7 pour répondre à vos urgences, même la nuit, les week‑ends et jours fériés.</p>
+        </details>
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">Quel est le coût d’un dépannage ?</summary>
+          <p class="mt-2">Nous vous fournissons toujours un devis gratuit et transparent avant intervention afin que vous connaissiez le prix exact. Le coût dépend de la nature des réparations et du temps nécessaire.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact" class="py-16 bg-secondary text-primary">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Une urgence ?</h2>
+      <p class="mb-6">Appelez‑nous immédiatement. Nous sommes là pour vous aider.</p>
+      <a href="tel:+33769685973" class="bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-dark transition">Nous appeler</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <img src="images/logo.png" alt="Logo AFEG" class="h-8 mb-2" />
+        <p>© 2025 AFEG. Tous droits réservés.</p>
+      </div>
+      <ul class="flex space-x-4 mb-4 md:mb-0">
+        <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+        <li><a href="depannages.html" class="text-secondary">Dépannages</a></li>
+        <li><a href="creations.html" class="hover:text-secondary">Créations</a></li>
+        <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
+      </ul>
+      <div>
+        <span class="block">Téléphone : <a href="tel:+33769685973" class="hover:text-secondary">07 69 68 59 73</a></span>
+        <span class="block">Email : <a href="mailto:contact@af-eg.fr" class="hover:text-secondary">contact@af-eg.fr</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
