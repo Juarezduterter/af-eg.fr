@@ -46,6 +46,10 @@
       display: inline-block;
       animation: marquee 20s linear infinite;
     }
+    /* Empêcher la déformation des logos dans le slider */
+    .marquee img {
+      object-fit: contain;
+    }
   </style>
   <!-- Structured data for Organization -->
   <script type="application/ld+json">
@@ -73,7 +77,8 @@
   <nav class="bg-white shadow fixed w-full z-50">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-4">
-        <a href="images/logo-afeg.jpg" class="flex items-center space-x-2">
+        <!-- Lien du logo pointant désormais vers la racine du site -->
+        <a href="/" class="flex items-center space-x-2">
           <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
           <!-- Removed text to display only the logo -->
         </a>
@@ -116,32 +121,7 @@
       <p class="text-lg md:text-xl mb-6">Dans le Grand‑Est pour les professionnels et les particuliers.</p>
       <a href="#contact" class="bg-secondary text-primary font-semibold px-6 py-3 rounded-md hover:bg-white transition">Contactez‑nous</a>
     </div>
-    <!-- défilement client logos en fond -->
-    <div class="absolute bottom-0 left-0 w-full overflow-hidden">
-      <div class="marquee flex items-center space-x-8 py-2 bg-black bg-opacity-50">
-        <!-- logos défilants -->
-        <!-- each logo is linked to its own PNG file so it can easily be replaced later -->
-        <a href="images/logo-burger-king.png"><img src="images/logo-burger-king.png" alt="Logo Burger King" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-hermes.png"><img src="images/logo-hermes.png" alt="Logo Hermes" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-buffalo-grill.png"><img src="images/logo-buffalo-grill.png" alt="Logo Buffalo Grill" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-kfc.png"><img src="images/logo-kfc.png" alt="Logo KFC" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-campanile.png"><img src="images/logo-campanile.png" alt="Logo Campanile" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-ibis-hotel.png"><img src="images/logo-ibis-hotel.png" alt="Logo IBIS Hotel" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-noz.png"><img src="images/logo-noz.png" alt="Logo NOZ" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-ktm.png"><img src="images/logo-ktm.png" alt="Logo KTM" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-bmw.png"><img src="images/logo-bmw.png" alt="Logo BMW" class="h-8 w-auto opacity-60" /></a>
-        <!-- duplicate logos for seamless loop -->
-        <a href="images/logo-burger-king.png"><img src="images/logo-burger-king.png" alt="Logo Burger King" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-hermes.png"><img src="images/logo-hermes.png" alt="Logo Hermes" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-buffalo-grill.png"><img src="images/logo-buffalo-grill.png" alt="Logo Buffalo Grill" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-kfc.png"><img src="images/logo-kfc.png" alt="Logo KFC" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-campanile.png"><img src="images/logo-campanile.png" alt="Logo Campanile" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-ibis-hotel.png"><img src="images/logo-ibis-hotel.png" alt="Logo IBIS Hotel" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-noz.png"><img src="images/logo-noz.png" alt="Logo NOZ" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-ktm.png"><img src="images/logo-ktm.png" alt="Logo KTM" class="h-8 w-auto opacity-60" /></a>
-        <a href="images/logo-bmw.png"><img src="images/logo-bmw.png" alt="Logo BMW" class="h-8 w-auto opacity-60" /></a>
-      </div>
-    </div>
+    <!-- le slider de logos en fond a été supprimé conformément aux nouvelles consignes -->
   </section>
 
   <!-- Qualités Section -->
@@ -223,7 +203,7 @@
         </div>
       </div>
       <div class="md:w-1/2 md:pl-8 flex justify-center">
-        <a href="images/portrait-du-gerant-dafeg.jpg"><img src="images/img3.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-lg max-w-full h-auto" /></a>
+        <a href="images/portrait-du-gerant-dafeg.jpg"><img src="images/portrait-du-gerant-dafeg.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-lg max-w-full h-auto" /></a>
       </div>
     </div>
   </section>
@@ -235,7 +215,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Créations métalliques -->
         <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <a href="images/creations-metalliques.jpg"><img src="images/img2.jpg" alt="Créations métalliques" class="h-40 w-full object-cover" /></a>
+          <a href="images/creation-metallique.jpg"><img src="images/creation-metallique.jpg" alt="Créations métalliques" class="h-40 w-full object-cover" /></a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Créations métalliques</h3>
             <p class="text-sm mb-4">Réalisez vos projets sur‑mesure en métal. Nous concevons et fabriquons des pièces uniques alliant élégance et robustesse.</p>
@@ -244,7 +224,7 @@
         </div>
         <!-- Serrurerie -->
         <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <a href="images/serrurerie.jpg"><img src="images/img1.jpg" alt="Serrurerie" class="h-40 w-full object-cover" /></a>
+          <a href="images/serrurerie.jpg"><img src="images/serrurerie.jpg" alt="Serrurerie" class="h-40 w-full object-cover" /></a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Serrurerie</h3>
             <p class="text-sm mb-4">Faites confiance à un artisan serrurier expérimenté pour vos installations, dépannages et conseils en sécurité.</p>
@@ -253,7 +233,7 @@
         </div>
         <!-- Dépannages -->
         <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <a href="images/depannages.jpg"><img src="images/img4.jpg" alt="Dépannages" class="h-40 w-full object-cover" /></a>
+          <a href="images/depannages.jpg"><img src="images/depannages.jpg" alt="Dépannages" class="h-40 w-full object-cover" /></a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Dépannages urgents</h3>
             <p class="text-sm mb-4">Une serrure cassée ou une urgence ? Nous intervenons rapidement pour tous vos dépannages en Alsace et Grand‑Est.</p>
@@ -262,7 +242,7 @@
         </div>
         <!-- Maintenance -->
         <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-          <a href="images/maintenance.jpg"><img src="images/img3.jpg" alt="Maintenance" class="h-40 w-full object-cover" /></a>
+          <a href="images/maintenance-industrielle.jpg"><img src="images/maintenance-industrielle.jpg" alt="Maintenance" class="h-40 w-full object-cover" /></a>
           <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">Maintenance récurrente</h3>
             <p class="text-sm mb-4">Assurez la longévité de vos installations avec des entretiens réguliers et un suivi personnalisé.</p>
@@ -307,15 +287,15 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« AFEG est intervenu rapidement pour réparer la porte de notre atelier. Travail soigné et professionnel, nous recommandons vivement ! »</p>
-          <span class="font-semibold">— Responsable Maintenance Hermes Strasbourg</span>
+          <span class="font-semibold">— Responsable Maintenance<br>Hermes Strasbourg</span>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« Pour nos créations en acier, l’équipe d’AFEG a été force de proposition et le résultat dépasse nos attentes. Merci pour votre créativité ! »</p>
-          <span class="font-semibold">— Directeur Rénovation Groupe Campanile</span>
+          <span class="font-semibold">— Directeur Rénovation<br>Groupe Campanile</span>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« Service client au top ! Devis clair, tarifs transparents et intervention dans les délais annoncés. »</p>
-          <span class="font-semibold">— Directeur Maintenance Burger King France</span>
+          <span class="font-semibold">— Directeur Maintenance<br>Burger King France</span>
         </div>
       </div>
     </div>
@@ -328,7 +308,7 @@
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <a href="images/soudeur-utilisant-une-disqueuse.jpg"><img src="images/img1.jpg" alt="Soudeur utilisant une disqueuse" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" /></a>
         <a href="images/decoupe-acier-sur-mesure.jpg"><img src="images/img2.jpg" alt="Découpe acier sur mesure" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" /></a>
-        <a href="images/portrait-du-gerant-dafeg.jpg"><img src="images/img3.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" /></a>
+        <a href="images/portrait-du-gerant-dafeg.jpg"><img src="images/portrait-du-gerant-dafeg.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" /></a>
         <a href="images/meuble-evier-sur-mesure.jpg"><img src="images/img4.jpg" alt="Meuble évier sur‑mesure" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" /></a>
       </div>
     </div>

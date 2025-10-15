@@ -45,6 +45,10 @@
       display: inline-block;
       animation: marquee 20s linear infinite;
     }
+    /* Empêcher la déformation des logos dans le slider */
+    .marquee img {
+      object-fit: contain;
+    }
   </style>
   <!-- Structured data for FAQ -->
   <script type="application/ld+json">
@@ -85,7 +89,8 @@
   <nav class="bg-white shadow fixed w-full z-50">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center space-x-4">
-        <a href="images/logo-afeg.jpg" class="flex items-center space-x-2">
+        <!-- Le logo renvoie désormais vers la racine du site -->
+        <a href="/" class="flex items-center space-x-2">
           <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
           <!-- Removed text to display only the logo -->
         </a>
