@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO meta tags -->
+  <title>AFEG – Métallerie, Serrurerie et Dépannages en Alsace</title>
+  <meta name="description" content="AFEG est votre expert en métallerie, serrurerie et dépannages dans le Grand‑Est. Nous réalisons des créations sur‑mesure, des réparations urgentes et des maintenances préventives pour les professionnels et les particuliers." />
+  <meta name="keywords" content="métallerie, serrurerie, dépannages, maintenance, Alsace, Grand‑Est, créations métalliques" />
+  <link rel="canonical" href="https://af-eg.fr/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AFEG – Métallerie, Serrurerie et Dépannages en Alsace" />
+  <meta property="og:description" content="AFEG accompagne les professionnels et les particuliers pour tous leurs besoins en métallerie, serrurerie et dépannages. Découvrez nos services sur‑mesure et notre savoir‑faire artisanal." />
+  <meta property="og:image" content="images/header.png" />
+  <meta property="og:site_name" content="AFEG" />
+  <!-- Fonts and Tailwind CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#000000',
+            secondary: '#fcb900',
+            light: '#f9f9f9',
+            dark: '#141414'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+  <!-- Structured data for Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AFEG",
+    "url": "https://af-eg.fr",
+    "logo": "images/logo.png",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+33 7 69 68 59 73",
+      "contactType": "customer service",
+      "areaServed": "FR"
+    }],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+</head>
+<body class="bg-light text-primary">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
+          <span class="font-semibold text-lg">AFEG</span>
+        </a>
+        <ul class="hidden md:flex space-x-6 ml-8">
+          <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+          <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
+          <li><a href="creations.html" class="hover:text-secondary">Créations métalliques</a></li>
+          <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <span class="font-semibold">+33 7 69 68 59 73</span>
+        <a href="#contact" class="bg-secondary text-white px-4 py-2 rounded-md hover:bg-primary hover:text-white transition">Contactez‑nous</a>
+      </div>
+      <!-- mobile menu -->
+      <div class="md:hidden flex items-center">
+        <button id="menuToggle" class="focus:outline-none text-primary">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <!-- dropdown menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="flex flex-col space-y-2 px-4 py-2">
+        <li><a href="serrurerie.html" class="block py-2 hover:text-secondary">Serrurerie</a></li>
+        <li><a href="depannages.html" class="block py-2 hover:text-secondary">Dépannages</a></li>
+        <li><a href="creations.html" class="block py-2 hover:text-secondary">Créations métalliques</a></li>
+        <li><a href="maintenance.html" class="block py-2 hover:text-secondary">Maintenance</a></li>
+        <li><a href="#contact" class="block py-2 bg-secondary text-white rounded-md text-center">Contactez‑nous</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/header.png');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Bienvenue chez AFEG</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Entreprise de métallerie, serrurerie et dépannages divers dans le Grand‑Est pour les professionnels et les particuliers.</p>
+      <a href="#contact" class="bg-secondary text-primary font-semibold px-6 py-3 rounded-md hover:bg-white transition">Contactez‑nous</a>
+    </div>
+  </section>
+
+  <!-- Qualités Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Nos valeurs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Polyvalence & Expertise -->
+        <div class="p-6 rounded-lg shadow-sm hover:shadow-lg transition border-t-4 border-secondary">
+          <div class="flex items-center justify-center mb-4">
+            <svg class="w-12 h-12 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Polyvalence &amp; Expertise</h3>
+          <p>Qu’il s’agisse de métallerie, serrurerie, dépannages ou maintenance, nous sommes engagés à offrir à tous nos clients des services de qualité grâce à notre savoir‑faire et notre expérience.</p>
+        </div>
+        <!-- Transparence des tarifs -->
+        <div class="p-6 rounded-lg shadow-sm hover:shadow-lg transition border-t-4 border-secondary">
+          <div class="flex items-center justify-center mb-4">
+            <svg class="w-12 h-12 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3 0 3 3 5 3 5s3-2 3-5c0-1.657-1.343-3-3-3z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m0 4h.01" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Transparence des tarifs</h3>
+          <p>Nos devis sont gratuits, clairs et détaillés pour vous éviter les mauvaises surprises. N’hésitez pas à nous contacter pour toute demande de tarif ou devis.</p>
+        </div>
+        <!-- Réactivité & Disponibilité -->
+        <div class="p-6 rounded-lg shadow-sm hover:shadow-lg transition border-t-4 border-secondary">
+          <div class="flex items-center justify-center mb-4">
+            <svg class="w-12 h-12 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h4l3-3h7a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V10a2 2 0 012-2z" /></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Réactivité &amp; Disponibilité</h3>
+          <p>Nous nous engageons à vous répondre en moins de 24 h et à intervenir rapidement dans toute l’Alsace et le Grand‑Est.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À propos / Process Section -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">À propos d’AFEG</h2>
+        <p class="mb-6">La maintenance n'est plus qu'une formalité pour vous désormais ! Découvrez notre processus simple et transparent pour garantir votre satisfaction et la fiabilité de vos installations.</p>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="text-secondary mr-4">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m2 7H7a2 2 0 01-2-2V6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v2" /></svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Réception de la demande</h4>
+              <p>Dès que nous recevons votre demande par mail ou téléphone, nous analysons vos besoins avec soin.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-secondary mr-4">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h2l3 7 4-12 3 5h4" /></svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Chiffrage précis</h4>
+              <p>Nous réalisons un chiffrage transparent et détaillé que nous vous soumettons rapidement.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-secondary mr-4">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M3 11h18M5 19h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v9a2 2 0 002 2z" /></svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Planification facilitée</h4>
+              <p>En collaboration avec vous, nous fixons la date et l’heure d’intervention qui vous conviennent.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-secondary mr-4">
+              <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            </div>
+            <div>
+              <h4 class="font-semibold">Intervention d’experts</h4>
+              <p>Notre équipe intervient avec expertise pour garantir votre satisfaction et la conformité de vos installations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-1/2 md:pl-8 flex justify-center">
+        <img src="images/img3.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-lg max-w-full h-auto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Nos services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Créations métalliques -->
+        <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/img2.jpg" alt="Créations métalliques" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Créations métalliques</h3>
+            <p class="text-sm mb-4">Réalisez vos projets sur‑mesure en métal. Nous concevons et fabriquons des pièces uniques alliant élégance et robustesse.</p>
+            <a href="creations.html" class="text-secondary font-semibold hover:underline">Découvrir</a>
+          </div>
+        </div>
+        <!-- Serrurerie -->
+        <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/img1.jpg" alt="Serrurerie" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Serrurerie</h3>
+            <p class="text-sm mb-4">Faites confiance à un artisan serrurier expérimenté pour vos installations, dépannages et conseils en sécurité.</p>
+            <a href="serrurerie.html" class="text-secondary font-semibold hover:underline">Découvrir</a>
+          </div>
+        </div>
+        <!-- Dépannages -->
+        <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/img4.jpg" alt="Dépannages" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Dépannages urgents</h3>
+            <p class="text-sm mb-4">Une serrure cassée ou une urgence ? Nous intervenons rapidement pour tous vos dépannages en Alsace et Grand‑Est.</p>
+            <a href="depannages.html" class="text-secondary font-semibold hover:underline">Découvrir</a>
+          </div>
+        </div>
+        <!-- Maintenance -->
+        <div class="bg-light rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="images/img3.jpg" alt="Maintenance" class="h-40 w-full object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Maintenance récurrente</h3>
+            <p class="text-sm mb-4">Assurez la longévité de vos installations avec des entretiens réguliers et un suivi personnalisé.</p>
+            <a href="maintenance.html" class="text-secondary font-semibold hover:underline">Découvrir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages Section -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Ils nous font confiance</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="italic mb-4">« AFEG est intervenu rapidement pour réparer la porte de notre atelier. Travail soigné et professionnel, nous recommandons vivement ! »</p>
+          <span class="font-semibold">— Jean, chef d’atelier</span>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="italic mb-4">« Pour nos créations en acier, l’équipe d’AFEG a été force de proposition et le résultat dépasse nos attentes. Merci pour votre créativité ! »</p>
+          <span class="font-semibold">— Claire, décoratrice</span>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
+          <p class="italic mb-4">« Service client au top ! Devis clair, tarifs transparents et intervention dans les délais annoncés. »</p>
+          <span class="font-semibold">— Mathieu, commerçant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galerie Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Galerie photo</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="images/img1.jpg" alt="Soudeur utilisant une disqueuse" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" />
+        <img src="images/img2.jpg" alt="Découpe acier sur mesure" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" />
+        <img src="images/img3.jpg" alt="Portrait du gérant d'AFEG" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" />
+        <img src="images/img4.jpg" alt="Meuble évier sur‑mesure" class="rounded-lg shadow-md hover:shadow-lg transition w-full h-40 object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-light">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Contactez‑nous</h2>
+        <p class="text-center mb-8">Par téléphone au <strong>07 69 68 59 73</strong> ou par mail à <a href="mailto:contact@af-eg.fr" class="text-secondary hover:underline">contact@af-eg.fr</a>. Vous pouvez également utiliser ce formulaire, nous vous répondrons sous 24 h.</p>
+        <form method="post" action="mailto:contact@af-eg.fr" enctype="text/plain" class="space-y-4">
+          <div class="flex flex-col md:flex-row md:space-x-4">
+            <input type="text" name="Nom" placeholder="Votre nom" required class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary" />
+            <input type="email" name="Email" placeholder="Votre e‑mail" required class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary mt-4 md:mt-0" />
+          </div>
+          <input type="tel" name="Téléphone" placeholder="Votre téléphone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary" />
+          <textarea name="Message" rows="5" placeholder="Votre message" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+          <div class="text-center">
+            <button type="submit" class="bg-secondary text-primary px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition">Envoyer ma demande</button>
+          </div>
+        </form>
+        <p class="mt-6 text-center text-sm text-gray-600">Nous n’avons pas de réseaux sociaux. Si vous souhaitez des nouvelles, appelez‑nous !</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">
+        <img src="images/logo.png" alt="Logo AFEG" class="h-8 mb-2" />
+        <p>© 2025 AFEG. Tous droits réservés.</p>
+      </div>
+      <ul class="flex space-x-4 mb-4 md:mb-0">
+        <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+        <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
+        <li><a href="creations.html" class="hover:text-secondary">Créations</a></li>
+        <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
+      </ul>
+      <div>
+        <span class="block">Téléphone : <a href="tel:+33769685973" class="hover:text-secondary">07 69 68 59 73</a></span>
+        <span class="block">Email : <a href="mailto:contact@af-eg.fr" class="hover:text-secondary">contact@af-eg.fr</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
