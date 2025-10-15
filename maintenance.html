@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maintenance industrielle et préventive – AFEG</title>
+  <meta name="description" content="AFEG propose des contrats de maintenance personnalisés pour assurer la longévité de vos installations en Alsace et dans le Grand‑Est. Bénéficiez d’un suivi régulier par des professionnels de confiance." />
+  <meta name="keywords" content="maintenance industrielle, contrat de maintenance, entretien préventif, Alsace, Grand‑Est" />
+  <link rel="canonical" href="https://af-eg.fr/maintenance/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Maintenance industrielle et préventive – AFEG" />
+  <meta property="og:description" content="Confiez la maintenance de vos installations à AFEG pour garantir leur fiabilité et prévenir les pannes. Nous offrons des contrats adaptés à vos besoins." />
+  <meta property="og:image" content="images/img1.jpg" />
+  <meta property="og:site_name" content="AFEG" />
+  <!-- Fonts and Tailwind CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#000000',
+            secondary: '#fcb900',
+            light: '#f9f9f9',
+            dark: '#141414'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    /* Animation pour le texte défilant et le slider de logos */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee {
+      white-space: nowrap;
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
+  </style>
+  <!-- Structured data for FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quels types de maintenance proposez‑vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nous proposons des prestations de maintenance préventive et corrective pour vos équipements de serrurerie, métallerie et diverses installations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "À quelle fréquence intervenez‑vous ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La fréquence est définie selon vos besoins : des interventions ponctuelles aux contrats annuels avec visites périodiques, nous nous adaptons à votre planning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Combien coûte un contrat de maintenance ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le prix varie selon la complexité de vos installations et la fréquence des interventions. Nous établissons un devis gratuit et personnalisé pour chaque client."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-light text-primary">
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <a href="images/logo-afeg.jpg" class="flex items-center space-x-2">
+          <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
+          <!-- Removed text to display only the logo -->
+        </a>
+        <ul class="hidden md:flex space-x-6 ml-8">
+          <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+          <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
+          <li><a href="creations.html" class="hover:text-secondary">Créations métalliques</a></li>
+          <li><a href="maintenance.html" class="text-secondary">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:flex items-center space-x-4">
+        <!-- Numéro de téléphone cliquable -->
+        <a href="tel:+33769685973" class="font-semibold hover:text-secondary">07 69 68 59 73</a>
+        <a href="#contact" class="bg-secondary text-primary font-semibold px-4 py-2 rounded-md hover:bg-primary hover:text-white transition">Contactez‑nous</a>
+      </div>
+      <div class="md:hidden flex items-center">
+        <button id="menuToggle" class="focus:outline-none text-primary">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg">
+      <ul class="flex flex-col space-y-2 px-4 py-2">
+        <li><a href="serrurerie.html" class="block py-2 hover:text-secondary">Serrurerie</a></li>
+        <li><a href="depannages.html" class="block py-2 hover:text-secondary">Dépannages</a></li>
+        <li><a href="creations.html" class="block py-2 hover:text-secondary">Créations métalliques</a></li>
+        <li><a href="maintenance.html" class="block py-2 text-secondary">Maintenance</a></li>
+        <li><a href="#contact" class="block py-2 bg-secondary text-primary rounded-md text-center">Contactez‑nous</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative h-72 md:h-96 bg-cover bg-center flex items-center justify-center" style="background-image: url('images/hero-maintenance.png');">
+    <div class="absolute inset-0 bg-black opacity-60"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Maintenances récurrentes dans le Grand‑Est</h1>
+      <p class="text-base md:text-lg max-w-2xl mx-auto">Votre tranquillité d’esprit assurée.</p>
+    </div>
+  </section>
+
+
+  <!-- Présentation -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Prolongez la vie de vos installations</h2>
+      <p class="mb-6">Parce que vos équipements méritent une attention permanente, AFEG vous propose des contrats de maintenance préventive et corrective. Notre objectif : garantir le bon fonctionnement et la sécurité de vos installations en réduisant les risques de panne.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-3">Pourquoi nous confier votre maintenance ?</h3>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Planification flexible</strong> : Nous adaptons nos interventions à votre planning pour limiter l’impact sur votre activité.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Solutions sur‑mesure</strong> : Chaque contrat est élaboré selon la nature de vos installations et vos contraintes spécifiques.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Transparence des tarifs</strong> : Nos devis sont gratuits et détaillés afin que vous puissiez anticiper vos dépenses.</div>
+            </li>
+            <li class="flex items-start">
+              <span class="text-secondary mr-3"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></span>
+              <div><strong>Satisfaction client</strong> : Nous sommes dédiés à votre sérénité et mettons tout en œuvre pour maintenir vos installations en parfait état.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <a href="images/maintenance-industrielle.jpg"><img src="images/img1.jpg" alt="Maintenance industrielle" class="rounded-lg shadow-lg h-64 w-full object-cover" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Logo Slider -->
+  <section class="py-8 bg-light">
+    <div class="overflow-hidden">
+      <div class="marquee flex items-center space-x-8">
+        <a href="images/logo-burger-king.png"><img src="images/logo-burger-king.png" alt="Logo Burger King" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-hermes.png"><img src="images/logo-hermes.png" alt="Logo Hermes" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-buffalo-grill.png"><img src="images/logo-buffalo-grill.png" alt="Logo Buffalo Grill" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-kfc.png"><img src="images/logo-kfc.png" alt="Logo KFC" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-campanile.png"><img src="images/logo-campanile.png" alt="Logo Campanile" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-ibis-hotel.png"><img src="images/logo-ibis-hotel.png" alt="Logo IBIS Hotel" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-noz.png"><img src="images/logo-noz.png" alt="Logo NOZ" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-ktm.png"><img src="images/logo-ktm.png" alt="Logo KTM" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-bmw.png"><img src="images/logo-bmw.png" alt="Logo BMW" class="h-8 w-auto opacity-60" /></a>
+        <!-- duplicate logos for seamless loop -->
+        <a href="images/logo-burger-king.png"><img src="images/logo-burger-king.png" alt="Logo Burger King" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-hermes.png"><img src="images/logo-hermes.png" alt="Logo Hermes" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-buffalo-grill.png"><img src="images/logo-buffalo-grill.png" alt="Logo Buffalo Grill" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-kfc.png"><img src="images/logo-kfc.png" alt="Logo KFC" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-campanile.png"><img src="images/logo-campanile.png" alt="Logo Campanile" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-ibis-hotel.png"><img src="images/logo-ibis-hotel.png" alt="Logo IBIS Hotel" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-noz.png"><img src="images/logo-noz.png" alt="Logo NOZ" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-ktm.png"><img src="images/logo-ktm.png" alt="Logo KTM" class="h-8 w-auto opacity-60" /></a>
+        <a href="images/logo-bmw.png"><img src="images/logo-bmw.png" alt="Logo BMW" class="h-8 w-auto opacity-60" /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">FAQ Maintenance</h2>
+      <div class="space-y-6">
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">Quels types de maintenance proposez‑vous ?</summary>
+          <p class="mt-2">Nous assurons des prestations de maintenance préventive et corrective pour vos équipements de serrurerie, métallerie et autres installations, afin de prévenir les pannes et prolonger leur durée de vie.</p>
+        </details>
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">À quelle fréquence intervenez‑vous ?</summary>
+          <p class="mt-2">Nous nous adaptons à votre emploi du temps : visites ponctuelles pour des contrôles spécifiques ou interventions régulières dans le cadre d’un contrat annuel.</p>
+        </details>
+        <details class="bg-white p-4 rounded-md shadow">
+          <summary class="font-semibold cursor-pointer">Combien coûte un contrat de maintenance ?</summary>
+          <p class="mt-2">Le coût est fonction du type d’installations à entretenir et de la fréquence des interventions. Nous vous remettons un devis gratuit et sur‑mesure pour estimer précisément le tarif.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire de contact -->
+  <section class="py-16 bg-light">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Demande de devis</h2>
+        <p class="text-center mb-8">Expliquez‑nous votre besoin, nous reviendrons vers vous sous 24 h.</p>
+        <form method="post" action="mailto:contact@af-eg.fr" enctype="text/plain" class="space-y-4">
+          <div class="flex flex-col md:flex-row md:space-x-4">
+            <input type="text" name="Nom" placeholder="Votre nom" required class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary" />
+            <input type="email" name="Email" placeholder="Votre e‑mail" required class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary mt-4 md:mt-0" />
+          </div>
+          <input type="tel" name="Téléphone" placeholder="Votre téléphone" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary" />
+          <textarea name="Message" rows="5" placeholder="Votre message" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+          <div class="text-center">
+            <button type="submit" class="bg-secondary text-primary px-6 py-3 rounded-md font-semibold hover:bg-primary hover:text-white transition">Envoyer ma demande</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section id="contact" class="py-16 bg-secondary text-primary">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Besoin de tranquillité d’esprit ?</h2>
+      <p class="mb-6">Contactez‑nous et bénéficiez d’une maintenance sur mesure pour vos installations.</p>
+      <a href="tel:+33769685973" class="bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-dark transition">Nous appeler</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Branding et crédits -->
+      <div>
+        <a href="images/logo-afeg.jpg"><img src="images/logo.png" alt="Logo AFEG" class="h-8 mb-2" /></a>
+        <p>© 2025 AFEG. Tous droits réservés.</p>
+        <p>Réalisation par <a href="https://www.enguerrand-quinard.fr/" class="hover:text-secondary underline">Enguerrand Quinard EIRL</a></p>
+      </div>
+      <!-- Navigation -->
+      <div>
+        <h4 class="font-semibold mb-2">Navigation</h4>
+        <ul class="space-y-2">
+          <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+          <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
+          <li><a href="creations.html" class="hover:text-secondary">Créations métalliques</a></li>
+          <li><a href="maintenance.html" class="text-secondary">Maintenance</a></li>
+        </ul>
+      </div>
+      <!-- Coordonnées -->
+      <div>
+        <h4 class="font-semibold mb-2">Contact</h4>
+        <span class="block">6 rue des Ardennes, 67460 Souffelweyersheim</span>
+        <span class="block">Téléphone : <a href="tel:+33769685973" class="hover:text-secondary">07 69 68 59 73</a></span>
+        <span class="block">Email : <a href="mailto:contact@af-eg.fr" class="hover:text-secondary">contact@af-eg.fr</a></span>
+        <a href="#contact" class="mt-4 inline-block bg-secondary text-primary px-4 py-2 rounded-md font-semibold hover:bg-primary hover:text-white transition">Demande de devis</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
