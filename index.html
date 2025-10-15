@@ -36,6 +36,16 @@
   </script>
   <style>
     body { font-family: 'Poppins', sans-serif; }
+    /* Animation pour le texte défilant et le slider de logos */
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee {
+      white-space: nowrap;
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
   </style>
   <!-- Structured data for Organization -->
   <script type="application/ld+json">
@@ -65,7 +75,7 @@
       <div class="flex items-center space-x-4">
         <a href="index.html" class="flex items-center space-x-2">
           <img src="images/logo.png" alt="Logo AFEG" class="h-10 w-auto" />
-          <span class="font-semibold text-lg">AFEG</span>
+          <!-- Removed text to display only the logo -->
         </a>
         <ul class="hidden md:flex space-x-6 ml-8">
           <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
@@ -75,7 +85,8 @@
         </ul>
       </div>
       <div class="hidden md:flex items-center space-x-4">
-        <span class="font-semibold">+33 7 69 68 59 73</span>
+        <!-- Clickable phone number -->
+        <a href="tel:+33769685973" class="font-semibold hover:text-secondary">07 69 68 59 73</a>
         <a href="#contact" class="bg-secondary text-white px-4 py-2 rounded-md hover:bg-primary hover:text-white transition">Contactez‑nous</a>
       </div>
       <!-- mobile menu -->
@@ -98,12 +109,19 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/header.png');">
+  <section class="relative h-screen bg-cover bg-center flex items-center justify-start" style="background-image: url('images/hero-index.png');">
     <div class="absolute inset-0 bg-black opacity-60"></div>
-    <div class="relative z-10 text-center text-white px-4">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Bienvenue chez AFEG</h1>
-      <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Entreprise de métallerie, serrurerie et dépannages divers dans le Grand‑Est pour les professionnels et les particuliers.</p>
+    <div class="relative z-10 text-left text-white px-4 md:max-w-xl md:ml-16">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Expert en métallerie, serrurerie et dépannages</h1>
+      <p class="text-lg md:text-xl mb-6">Dans le Grand‑Est pour les professionnels et les particuliers.</p>
       <a href="#contact" class="bg-secondary text-primary font-semibold px-6 py-3 rounded-md hover:bg-white transition">Contactez‑nous</a>
+    </div>
+    <!-- défilement client logos en fond -->
+    <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+      <div class="marquee flex items-center space-x-8 text-secondary font-semibold py-2 bg-black bg-opacity-50">
+        <span>Burger King</span><span>Hermes</span><span>Buffalo Grill</span><span>KFC</span><span>Campanile</span><span>IBIS Hotel</span><span>NOZ</span><span>KTM</span><span>BMW</span>
+        <span>Burger King</span><span>Hermes</span><span>Buffalo Grill</span><span>KFC</span><span>Campanile</span><span>IBIS Hotel</span><span>NOZ</span><span>KTM</span><span>BMW</span>
+      </div>
     </div>
   </section>
 
@@ -236,6 +254,16 @@
     </div>
   </section>
 
+  <!-- Clients Logo Slider -->
+  <section class="py-8 bg-light">
+    <div class="overflow-hidden">
+      <div class="marquee flex items-center space-x-8 text-secondary font-semibold">
+        <span>Burger King</span><span>Hermes</span><span>Buffalo Grill</span><span>KFC</span><span>Campanile</span><span>IBIS Hotel</span><span>NOZ</span><span>KTM</span><span>BMW</span>
+        <span>Burger King</span><span>Hermes</span><span>Buffalo Grill</span><span>KFC</span><span>Campanile</span><span>IBIS Hotel</span><span>NOZ</span><span>KTM</span><span>BMW</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Témoignages Section -->
   <section class="py-16 bg-light">
     <div class="container mx-auto px-4 text-center">
@@ -243,15 +271,15 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« AFEG est intervenu rapidement pour réparer la porte de notre atelier. Travail soigné et professionnel, nous recommandons vivement ! »</p>
-          <span class="font-semibold">— Jean, chef d’atelier</span>
+          <span class="font-semibold">— Responsable Maintenance Hermes Strasbourg</span>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« Pour nos créations en acier, l’équipe d’AFEG a été force de proposition et le résultat dépasse nos attentes. Merci pour votre créativité ! »</p>
-          <span class="font-semibold">— Claire, décoratrice</span>
+          <span class="font-semibold">— Directeur Rénovation Groupe Campanile</span>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition">
           <p class="italic mb-4">« Service client au top ! Devis clair, tarifs transparents et intervention dans les délais annoncés. »</p>
-          <span class="font-semibold">— Mathieu, commerçant</span>
+          <span class="font-semibold">— Directeur Maintenance Burger King France</span>
         </div>
       </div>
     </div>
@@ -275,7 +303,7 @@
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
         <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Contactez‑nous</h2>
-        <p class="text-center mb-8">Par téléphone au <strong>07 69 68 59 73</strong> ou par mail à <a href="mailto:contact@af-eg.fr" class="text-secondary hover:underline">contact@af-eg.fr</a>. Vous pouvez également utiliser ce formulaire, nous vous répondrons sous 24 h.</p>
+        <p class="text-center mb-8">Par téléphone au <a href="tel:+33769685973" class="text-secondary hover:underline font-semibold">07 69 68 59 73</a> ou par mail à <a href="mailto:contact@af-eg.fr" class="text-secondary hover:underline">contact@af-eg.fr</a>. Vous pouvez également utiliser ce formulaire, nous vous répondrons sous 24 h.</p>
         <form method="post" action="mailto:contact@af-eg.fr" enctype="text/plain" class="space-y-4">
           <div class="flex flex-col md:flex-row md:space-x-4">
             <input type="text" name="Nom" placeholder="Votre nom" required class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary" />
@@ -293,21 +321,31 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-8">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-4 md:mb-0">
-        <img src="images/logo.png" alt="Logo AFEG" class="h-8 mb-2" />
-        <p>© 2025 AFEG. Tous droits réservés.</p>
-      </div>
-      <ul class="flex space-x-4 mb-4 md:mb-0">
-        <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
-        <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
-        <li><a href="creations.html" class="hover:text-secondary">Créations</a></li>
-        <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
-      </ul>
+  <footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Branding et crédits -->
       <div>
+        <img src="images/logo.png" alt="Logo AFEG" class="h-8 mb-2" />
+        <p>© 2025 AFEG. Tous droits réservés.</p>
+        <p>Réalisation par <a href="https://www.enguerrand-quinard.fr/" class="hover:text-secondary underline">Enguerrand Quinard EIRL</a></p>
+      </div>
+      <!-- Navigation -->
+      <div>
+        <h4 class="font-semibold mb-2">Navigation</h4>
+        <ul class="space-y-2">
+          <li><a href="serrurerie.html" class="hover:text-secondary">Serrurerie</a></li>
+          <li><a href="depannages.html" class="hover:text-secondary">Dépannages</a></li>
+          <li><a href="creations.html" class="hover:text-secondary">Créations métalliques</a></li>
+          <li><a href="maintenance.html" class="hover:text-secondary">Maintenance</a></li>
+        </ul>
+      </div>
+      <!-- Coordonnées -->
+      <div>
+        <h4 class="font-semibold mb-2">Contact</h4>
+        <span class="block">6 rue des Ardennes, 67460 Souffelweyersheim</span>
         <span class="block">Téléphone : <a href="tel:+33769685973" class="hover:text-secondary">07 69 68 59 73</a></span>
         <span class="block">Email : <a href="mailto:contact@af-eg.fr" class="hover:text-secondary">contact@af-eg.fr</a></span>
+        <a href="#contact" class="mt-4 inline-block bg-secondary text-primary px-4 py-2 rounded-md font-semibold hover:bg-primary hover:text-white transition">Demande de devis</a>
       </div>
     </div>
   </footer>
